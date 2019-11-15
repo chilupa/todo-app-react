@@ -1,6 +1,7 @@
 import React from "react";
 import TodoItem from "./TodoItem";
 import Input from "./Input";
+import Aux from "../hoc/Aux";
 
 export default class Todo extends React.Component {
   constructor(props) {
@@ -31,7 +32,7 @@ export default class Todo extends React.Component {
 
   render() {
     return (
-      <div>
+      <Aux>
         <h2>Never miss a thing!</h2>
         <Input changed={this.handleTodoChange} />
         <button onClick={() => this.handleSave(this.state.todo)}>Save</button>
@@ -48,7 +49,7 @@ export default class Todo extends React.Component {
             <TodoItem todo={todo.name} checked={todo.done} />
           </div>
         ))}
-      </div>
+      </Aux>
     );
   }
 }
