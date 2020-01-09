@@ -35,7 +35,12 @@ const Todo = () => {
             ''
           ) : (
             <div>
-              <Button className="SaveButton" onClick={() => handleSave(todo)}>
+              <Button
+                variant="contained"
+                color="primary"
+                className="SaveButton"
+                onClick={() => handleSave(todo)}
+              >
                 Save
               </Button>
             </div>

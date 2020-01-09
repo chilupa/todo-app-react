@@ -16,7 +16,7 @@ const Input = props => {
 };
 
 Input.propTypes = {
-  changed: PropTypes.string
+  changed: PropTypes.func
 };
 
 export default Input;
