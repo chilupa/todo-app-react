@@ -1,16 +1,22 @@
-import React from "react";
+import React from 'react';
+import '../styles/Todo.scss';
+import PropTypes from 'prop-types';
 
 const Input = props => {
   return (
     <div>
       <input
-        style={{ width: "50%" }}
+        className="InputComponent"
         placeholder="Please enter your todo"
         type="text"
         onChange={props.changed}
       />
     </div>
   );
+};
+
+Input.propTypes = {
+  changed: PropTypes.string
 };
 
 export default Input;

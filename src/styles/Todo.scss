@@ -1,0 +1,17 @@
+.Wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.InputComponent {
+  width: 300px;
+}
+
+.SaveButton {
+  padding: 5px;
+  background-color: blue;
+  color: white;
+  width: 50px;
+  border-radius: 5px;
+}
